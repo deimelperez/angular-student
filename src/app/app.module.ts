@@ -11,6 +11,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
 import { StudentSearchComponent } from './student-search/student-search.component';
 import { StudentFormComponent } from './student-form/student-form.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { StudentFormComponent } from './student-form/student-form.component';
     BrowserModule,
     FormsModule,
     HttpClientModule,
+    CommonModule,
     AppRoutingModule
   ],
   providers: [],

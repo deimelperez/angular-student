@@ -14,4 +14,8 @@ export class StudentFormComponent {
 
   onSubmit() { this.submitted = true; }
 
-}
+  newStudent() {
+    this.model = new Student(42, '', '');
+  }
+
+}//estoy volviendo a instalar xq tuve problemas con las libs hace un rato,no vaya a ser ese el problema
