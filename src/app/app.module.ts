@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
 import { StudentSearchComponent } from './student-search/student-search.component';
+import { StudentFormComponent } from './student-form/student-form.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { StudentSearchComponent } from './student-search/student-search.componen
     MessagesComponent,
     DashboardComponent,
     StudentSearchComponent,
+    StudentFormComponent,
   ],
   imports: [
     BrowserModule,

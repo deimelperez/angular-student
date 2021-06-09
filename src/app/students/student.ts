@@ -1,5 +1,8 @@
-export interface Student {
-    id: number;
-    name: string;
-    email: string;
-  }
+export class Student {
+  constructor(
+    id: number,
+    name: string,
+    email: string,
+  ) { }
+
+}
