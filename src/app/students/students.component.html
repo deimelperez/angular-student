@@ -1,0 +1,22 @@
+<h2>My Students</h2>
+<ul class="heroes">
+    <li *ngFor="let student of students">
+        <a routerLink="/detail/{{student.id}}">
+            <span class="badge">{{student.id}}</span> {{student.name}}
+        </a>
+        <button class="delete" title="delete hero" (click)="delete(student)">x</button>
+    </li>
+</ul>
+
+<div>
+    <label for="new-hero">Student name: </label>
+    <input id="new-hero" #studentName />
+    <label for="new-hero">Student Email: </label>
+    <input id="new-hero" #studentEmail />
+
+    <!-- (click) passes input value to add() and then clears the input -->
+    <button class="add-button"
+        (click)="add(studentName.value, studentEmail.value); studentName.value=''; studentEmail.value=''">
+        Add student
+    </button>
+</div>
